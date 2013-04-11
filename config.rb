@@ -1,52 +1,24 @@
-###
-# Compass
-###
+#encoding=utf-8
 
-# Susy grids in Compass
-# First: gem install susy
-# require 'susy'
+require 'ostruct'
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+helpers do
+  def some_helper
+    "Helping"
+  end
 
-###
-# Page options, layouts, aliases and proxies
-###
+  def config
+    OpenStruct.new(
+      :title => "value",
+      :keywords => "keywords",
+      :description => "description"
+    )
+  end
+end
 
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy (fake) files
-# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
+%w{ product contact blog }.each do |link|
+  page "#{link}"
+end
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'

@@ -1,0 +1,31 @@
+!!!doctype
+
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content =>"IE=edge,chrome=1", "http-equiv"=>"X-UA-Compatible"}
+    %meta{:name => "Description", :content=>"#{config.description}"}
+    %meta{:name => "Keywords", :content=>"#{config.keywords}"}
+
+    %title= config.title || "TransformOne - Cloud Clinical Trial Solution"
+
+    %style{:src => "stylesheets/normalize.css", :type => "text/css"}
+    %style{:src => "stylesheets/all.css", :type => "text/css"}
+
+  %body
+    .header
+      #logo
+      %ul.nabbar
+        %li
+          %a{:herf => "/product.html"} Product
+        %li
+          %a{:herf => "/product.html"} Product
+        %li
+          %a{:herf => "/product.html"} Product
+        %li
+          %a{:herf => "/product.html"} Product
+
+    .main
+      = yield
+
+    .foot
