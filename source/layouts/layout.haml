@@ -19,17 +19,17 @@
           %img{:src => "/images/logo.jpg", :height => "72px", :width => "72px"}
         %ul.nabbar
           %li
-            %a{:herf => "/"} Home
+            %a{:href => "/index.html"} Home
           %li
-            %a{:herf => "/product.html"} Product
+            %a{:href => "/product.html"} Product
           %li
-            %a{:herf => "/press.html"} Press
+            %a{:href => "/press.html"} Press
           %li
-            %a{:herf => "/team.html"} Team
+            %a{:href => "/team.html"} Team
           %li
-            %a{:herf => "/blog.html"} Blog
+            %a{:href => "/blog.html"} Blog
           %li
-            %a{:herf => "/contact.html"} Contact
+            %a{:href => "/contact.html"} Contact
 
     .main
       = yield
@@ -37,3 +37,9 @@
     #foot
     #copyright
       Copyright 2009 - 2013 TransformOne.com, LLC. All rights reserved.
+
+    %script{:src => "/javascripts/jquery.js", :type => "text/javascript"}
+    :coffee
+      $(document).ready ()->
+        $(".nabbar li a[href*=#{data.page.current_page}]").parent().addClass('current')
+            

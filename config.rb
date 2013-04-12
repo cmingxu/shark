@@ -9,14 +9,14 @@ helpers do
 
   def config
     OpenStruct.new(
-      :title => "value",
-      :keywords => "keywords",
-      :description => "description"
+      :title => "TransformOne - Cloud Clinical Trail Solution",
+      :keywords => "Clinical Trial, Cloud Solution, cost saving, time saving, pharmaceutical trial",
+      :description => "cloud solution form clinical trial data collecting and data analysis"
     )
   end
 end
 
-%w{ product contact blog }.each do |link|
+%w{ product contact blog press }.each do |link|
   page "#{link}"
 end
 set :css_dir, 'stylesheets'

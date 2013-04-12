@@ -6,6 +6,11 @@ body {
   color: black;
 }
 
+body a{
+  text-decoration: none;
+  color: white;
+}
+
 
 #header {
   background: url(/images/header_tile.png);
@@ -26,7 +31,28 @@ body {
 
 #header ul li{
   float: left;
-  margin: 10px 40px 10px 10px;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  text-shadow: 0.1em 0.1em 0.2em #333;
+  
+}
+
+#header ul li a{
+  display: block;
+}
+
+#header ul li a:hover{
+  color: gray;
+}
+
+
+#header ul li.current{
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: gray;
+  color: white;
 }
 
 .main{
@@ -76,6 +102,8 @@ body {
   padding-top: 40px; 
   padding-bottom: 15px;
   width: 800px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  
 }
 
 .feature-area .slogan h1{
@@ -118,10 +146,11 @@ body {
 }
 
 .highlight-columns .one-third .title{
-  
+  text-transform: capitalize;
+  padding: 10px 3px;
 }
 
 
 .highlight-columns .one-third .highlight-content{
-
+  
 }
