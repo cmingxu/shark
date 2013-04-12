@@ -9,23 +9,31 @@
 
     %title= config.title || "TransformOne - Cloud Clinical Trial Solution"
 
-    %style{:src => "stylesheets/normalize.css", :type => "text/css"}
-    %style{:src => "stylesheets/all.css", :type => "text/css"}
+    %link{:rel=> "stylesheet", :href => "stylesheets/normalize.css", :type => "text/css"}
+    %link{:rel=> "stylesheet", :href => "stylesheets/all.css", :type => "text/css"}
 
   %body
-    .header
-      #logo
-      %ul.nabbar
-        %li
-          %a{:herf => "/product.html"} Product
-        %li
-          %a{:herf => "/product.html"} Product
-        %li
-          %a{:herf => "/product.html"} Product
-        %li
-          %a{:herf => "/product.html"} Product
+    #header
+      .content
+        #logo
+          %img{:src => "/images/logo.jpg", :height => "72px", :width => "72px"}
+        %ul.nabbar
+          %li
+            %a{:herf => "/"} Home
+          %li
+            %a{:herf => "/product.html"} Product
+          %li
+            %a{:herf => "/press.html"} Press
+          %li
+            %a{:herf => "/team.html"} Team
+          %li
+            %a{:herf => "/blog.html"} Blog
+          %li
+            %a{:herf => "/contact.html"} Contact
 
     .main
       = yield
 
-    .foot
+    #foot
+    #copyright
+      Copyright 2009 - 2013 TransformOne.com, LLC. All rights reserved.
