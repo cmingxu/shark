@@ -132,28 +132,47 @@ body a{
 
 .highlights{
   width: 960px;
-  height: 400px;
+  height: 250px;
   margin: auto;
   background: url(/images/third-left-bg.png) no-repeat 914px top;
 }
 
-.highlight-columns .one-third{
+.highlight-columns .one-fourth{
   float: left;
-  width: 180px;
-  height: 380px;
+  width: 200px;
+  height: 250px;
   background: url(/images/third-left-bg.png) no-repeat top left;
-  padding: 31px 30px 0px 81px;
+  padding: 20px 10px 0px 20px;
 }
 
-.highlight-columns .one-third .title{
+.highlight-columns .one-fourth .title{
   text-transform: capitalize;
   padding: 10px 3px;
+  height: 40px;
+  font-weight: bold;
 }
 
 
-.highlight-columns .one-third .highlight-content{
-  
+.highlight-columns .one-fourth .highlight-content{
+  font-size: 14px; 
 }
+
+.social-links{
+  height: 30px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.social-links a{
+  display: block;
+  float: left;
+}
+
+.social-links img{
+  margin-left: 5px;
+}
+
+
 
 /*team*/
 .team img.team-event{
@@ -176,3 +195,8 @@ body a{
   margin-right: 50px;
 }
 
+
+/*blog*/
+.blog .content{
+  min-height: 1000px;
+}
