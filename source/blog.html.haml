@@ -2,20 +2,51 @@
 current_page: "blog"
 ---
 
-.main.blog
-  .content
-    .blog-entries
-      %a{:anchor => "transform-one-new-team"}
-      .title TransformOne New Team Formed
-      .writen-when April 19, 2013
-      .author Alex
-      .blog-content
-
-    .sidebar
-      %ui
+.content
+  .blog-entries
+    %a{:anchor => "transform-one-new-team"}
+    .title 
+      %h1    
+        TransformOne New Team Formed
+    .writen-when April 19, 2013
+    .author Alex
+    .blog-content
+      :markdown
+        clarence **holmes** framed prints, architectural framed prints
+        , architecture [abc]()framed prints, boats framed prints, boston framed
+        prints, building framed prints, charles river framed prints,
+        cityscape framed prints, john hancock building framed prints,
+        long exposure framed prints, long-exposure framed prints, 
+        massachusetts framed prints, new england framed prints, night
+        framed prints, prudential center framed prints, river framed
+        prints, sailboats framed prints, scenery framed prints, skyline 
+        framed prints, skyscraper framed prints, structures framed prints,
+        time exposure framed prints, time-exposure framed prints, twilight 
+        framed prints, urban landscape framed prints, clarence holmes greeting
+        cards, architectural greeting cards, architecture greeting cards,
+        boats greeting cards, boston greeting cards, building greeting cards,
+        charles river greeting cards, cityscape greeting cards, john hancock 
+        building greeting cards, long exposure greeting cards, long-exposure
+        greeting cards, massachusetts greeting cards, new england greeting 
+        cards, night greeting cards, prudential center greeting cards, river
+        greeting cards, sailboats greeting cards, scenery greeting cards,
+        skyline greeting cards, skyscraper greeting cards, structures 
+        greeting cards, time exposure greeting cards, time-exposure greeting
+        cards, twilight greeting cards, urban landscape greeting cards,
+        clarence holmes prints, architectural prints, architecture prints,
+        boats prints, boston prints, building prints, charles river prints,
+        cityscape prints, john hancock building prints, long exposure prints, 
+        long-exposure prints, massachusetts prints, new england prints, 
+        night prints, prudential center prints, river prints, sailboats 
+  
+  .sidebar
+    .menucontainer
+      %ul.menu
+        %li.selected
+          %a{:src => "/blog.html#transform-one-new-team"} New Team Formed
         %li
-          %a{:src => "/blog.html#transform-one-new-team"} TransformOne New Team Formed
+          %a{:src => "/blog.html#transform-one-new-team"} Another new Post
         %li
-          %a{:src => "/blog.html#transform-one-new-team"} TransformOne New Team Formed
-        %li
-          %a{:src => "/blog.html#transform-one-new-team"} TransformOne New Team Formed
+          %a{:src => "/blog.html#transform-one-new-team"} Woo Woo Woo
+  
+  .clear
