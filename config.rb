@@ -16,7 +16,7 @@ helpers do
   end
 end
 
-%w{ product contact blog press }.each do |link|
+%w{ product contact blog solution }.each do |link|
   page "#{link}"
 end
 set :css_dir, 'stylesheets'
