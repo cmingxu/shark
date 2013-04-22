@@ -43,10 +43,14 @@ current_page: "blog"
     .menucontainer
       %ul.menu
         %li.selected
-          %a{:src => "/blog.html#transform-one-new-team"} New Team Formed
+          %a{:href => "/blog.html#transform-one-new-team"} New Team Formed
         %li
-          %a{:src => "/blog.html#transform-one-new-team"} Another new Post
+          %a{:href => "/blog.html#transform-one-new-team"} Another new Post
         %li
-          %a{:src => "/blog.html#transform-one-new-team"} Woo Woo Woo
+          %a{:href => "/blog.html#transform-one-new-team"} Woo Woo Woo
   
   .clear
+
+  :javascript
+    $(".menu li").toggleClass("selected", "");
+      
