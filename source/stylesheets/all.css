@@ -68,9 +68,13 @@ body a{
 
 #foot{
   clear: both;
-  background-color: #f7f9fb;
+  background-color: rgb(231, 243, 255);
   color: white;
-  height: 170px;
+  height: 120px;
+}
+
+#foot h2{
+  margin: 0px 0px;
 }
 
 #copyright{
@@ -132,7 +136,7 @@ body a{
 
 .highlights{
   width: 960px;
-  height: 250px;
+  height: 150px;
   margin: auto;
   background: url(/images/third-left-bg.png) no-repeat 914px top;
 }
@@ -140,7 +144,7 @@ body a{
 .highlight-columns .one-fourth{
   float: left;
   width: 200px;
-  height: 250px;
+  height: 150px;
   background: url(/images/third-left-bg.png) no-repeat top left;
   padding: 20px 10px 0px 20px;
 }
@@ -275,6 +279,11 @@ body a{
 }
 
 /*contact*/
+
+.contact{
+  height: 300px;
+  background-color: #215b87;
+}
 .contact-words{
   width: 960px;
   margin: auto;
@@ -310,13 +319,10 @@ body a{
 
 #foot .content{
   color: black;
-  padding-top: 40px;
+  line-height: 120px;
+  text-align: center;
 }
 
-#foot .foot-slogan{
-  width: 600px;
-  float: left;
-}
 
 #foot .foot-additional-info{
   width: 328px;
