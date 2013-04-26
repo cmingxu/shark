@@ -179,8 +179,15 @@ body a{
 
 
 /*team*/
-.team img.team-event{
-  margin-top: 25px;
+.team .team-content{
+  background-color: #215b87;
+}
+.team .team-event{
+  margin: auto;
+  width: 960px;
+}
+
+.team-event img{
 }
 
 .team .member{
